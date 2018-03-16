@@ -86,9 +86,28 @@
 
    ## What the above code does:
   
- ###### We start by requiring Node’s native HTTP module and Initialize port server. We then use HTTP createServer method to create a new web server object, to which we pass an anonymous function. This function will be invoked for every new connection that is made to the server.
-###### The anonymous function is called with two arguments (request(req) and response(res)) which contain the request from the user and the response, which we use to send back a 200 HTTP status code, along with our “Hello World!” message.
+ #### We start by requiring Node’s native HTTP module and Initialize port server. We then use HTTP createServer method to create a new web server object, to which we pass an anonymous function. This function will be invoked for every new connection that is made to the server.
+#### The anonymous function is called with two arguments (request(req) and response(res)) which contain the request from the user and the response, which we use to send back a 200 HTTP status code, along with our “Hello World!” message.
 
- ###### Finally, we tell the server to listen for incoming requests on port 3000, and output a message to the terminal to let us know it’s running.
+ #### Finally, we tell the server to listen for incoming requests on port 3000, and output a message to the terminal to let us know it’s running.
 
+## Node Package Manager :
 
+   ### Wikipedia 
+      > npm is a package manager for the JavaScript programming language. It is the default package           > manager for the JavaScript runtime environment Node.js.
+
+   ### Check version
+   
+        $ npm --version
+        
+   ### To load dependencies we just have to run a command in command prompt:
+   
+      $ npm install 
+      
+   ### If we want to install *express js* module :
+   
+      $ npm install express
+  
+  ### Now you can use express in js file as follows:
+  
+     '''var express = require('express');'''
