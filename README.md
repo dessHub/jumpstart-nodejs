@@ -94,7 +94,7 @@
 ## Node Package Manager :
 
    ### Wikipedia 
-      >npm is a package manager for the JavaScript programming language. It is the default package             >manager for the JavaScript runtime environment Node.js.
+>npm is a package manager for the JavaScript programming language. It is the default package             >manager for the JavaScript runtime environment Node.js.
 
    ### Check version
    
@@ -110,4 +110,4 @@
   
   ### Now you can use express in js file as follows:
   
-     '''var express = require('express');'''
+     var express = require('express');
