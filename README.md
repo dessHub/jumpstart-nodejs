@@ -111,3 +111,35 @@
   ### Now you can use express in js file as follows:
   
      var express = require('express');
+     
+## Package.json
+  
+   After a npm install command package.json file is generated in the project root directory.It has the list of packages that your project depends on. Below is a sample of the package.json file:
+   
+   {
+  "name": "ApplicationName",
+  "version": "0.0.1",
+  "description": "Application Description",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/npm.git"
+  },
+  "dependencies": {
+    "express": "~3.0.1",
+    "sequelize":"latest",
+    "q":"latest",
+    "tedious":"latest",
+    "angular":"latest",
+    "angular-ui-router": "~0.2.11",
+    "path":"latest",
+    "dat-gui":"latest"
+  }
+}
+
+   
+   
+   
