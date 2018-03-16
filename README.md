@@ -86,8 +86,9 @@
 
    ## What the above code does:
   
-        We start by requiring Node’s native HTTP module and Initialize port server. We then use HTTP createServer method to create a new web server object, to which we pass an anonymous function. This function will be invoked for every new connection that is made to the server.
+ ###### We start by requiring Node’s native HTTP module and Initialize port server. We then use HTTP createServer method to create a new web server object, to which we pass an anonymous function. This function will be invoked for every new connection that is made to the server.
+###### The anonymous function is called with two arguments (request(req) and response(res)) which contain the request from the user and the response, which we use to send back a 200 HTTP status code, along with our “Hello World!” message.
 
-        The anonymous function is called with two arguments (request(req) and response(res)) which contain the request from the user and the response, which we use to send back a 200 HTTP status code, along with our “Hello World!” message.
+ ###### Finally, we tell the server to listen for incoming requests on port 3000, and output a message to the terminal to let us know it’s running.
 
-        Finally, we tell the server to listen for incoming requests on port 3000, and output a message to the terminal to let us know it’s running.
+
