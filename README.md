@@ -64,19 +64,30 @@
     
    ### Create a file name server.js and type :
    
-     const http = require('http');
+     const http = require('http'); //requiring Node’s native HTTP module.
 
-     const hostname = '127.0.0.1';
-     const port = 3000;
+     const port = 3000;  // Initializing server port.
 
-     const server = http.createServer((req, res) => {
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'text/plain');
-        res.end('Hello World\n');
+     const server = http.createServer((req, res) => {    // new web server object.
+        res.statusCode = 200;      // http status code.
+        res.setHeader('Content-Type', 'text/plain');  // Type of response being emmitted .
+        res.end('Hello World\n');  // What to diplayed .
       });
 
       server.listen(port, hostname, () => {
-        console.log(`Server running at http://${hostname}:${port}/`);
+        console.log(`Server running at http://localhost:${port}/`);
       });
 
-       
+   ### Save and start server on your terminal:
+   
+       $ nodejs server.js
+      
+   ### Open up a browser and navigate to http://localhost:3000 to see “Hello, World!” displayed in the browser.
+
+   ## What the above code does:
+  
+        We start by requiring Node’s native HTTP module and Initialize port server. We then use HTTP createServer method to create a new web server object, to which we pass an anonymous function. This function will be invoked for every new connection that is made to the server.
+
+        The anonymous function is called with two arguments (request(req) and response(res)) which contain the request from the user and the response, which we use to send back a 200 HTTP status code, along with our “Hello World!” message.
+
+        Finally, we tell the server to listen for incoming requests on port 3000, and output a message to the terminal to let us know it’s running.
