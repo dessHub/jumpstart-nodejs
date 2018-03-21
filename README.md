@@ -65,7 +65,8 @@
    ### Create a file name server.js and type :
    
      const http = require('http'); //requiring Node’s native HTTP module.
-
+     
+     hostname = "localhost";
      const port = 3000;  // Initializing server port.
 
      const server = http.createServer((req, res) => {    // new web server object.
